@@ -19,8 +19,8 @@ One popup per traffic source, one first-order offer per person. The popup restat
 
 ## Brand tokens
 - Seed Supreme: dark card #1a1a1a, 880x560, radius 16, with a 320px photo panel under an amber-to-ink scrim. Accent orange #f47920, carried by an uppercase source chip. Button is the gradient `linear-gradient(110.521deg, #D1671B 14.07%, #422109 89.2%)`, radius 16, underlined, Work Sans 700. Headline PP Agrandir Wide (Archivo 900 stands in; PP Agrandir is not a Google face), body Work Sans. Voice: the seed counter; strain names, pack math, "stack your freebies". Direction from the shared Seed Supreme canvas; the white card is kept as an alternate surface.
-- Homegrown: white card, wide caps display (DrukWide on site; Archivo 900 wide in mock-ups). Button is the design system's campaign pill: lime #deffb7 under the sticker sheen, ink #0d523d, fully rounded, Helvetica Neue 700 at -.04em, 1px rgb(227 255 212 / .62) border (CampaignButton, tone `lime`, `knob` off - popups do not use the arrow knob). Green #05c87b stays the brand accent for the source rule and the field caret. Voice: the mentor; "we replace any seed that doesn't pop".
-- ILGM: mint #DCFCE7 card, Boldonse 400 caps headline with letter-spacing .05em and line-height 1.5, Figtree body, red #DB0B16 button, input stroke #3C3C3C. Voice: home of the growers; guarantee first. Forms only; flows are out of scope.
+- Homegrown: two surfaces. White is the default; dark is the brand gradient `radial-gradient(145.81% 179.85% at -32.92% 121.16%, #003024 0%, #0E5241 100%)` with white ink. Type is real, embedded: deal in **Druk Bold**, qualifier in **Druk Wide Bold**, everything else Helvetica. Button is the design system's campaign pill *with* the arrow knob: lime #deffb7 under the sticker sheen, ink #0d523d, fully rounded, Helvetica 700 at -.04em, 1px rgb(227 255 212 / .62) border, knob rgb(255 255 255 / .78) (CampaignButton, tone `lime`, `knob` on). The knob is drawn as `.cta::after`, so the exported markup is unchanged. Green #05c87b stays the accent for the source rule and the field caret. Voice: the mentor; "we replace any seed that doesn't pop".
+- ILGM: white card, Boldonse 400 caps headline with letter-spacing .05em and line-height 1.5, Figtree body, near-black #111111 button, input stroke #3C3C3C. Red #DB0B16 stays the accent for the source rule and the caret, not the button. Voice: home of the growers; guarantee first. Forms only; flows are out of scope.
 - USOA: flag panel or product scene, Oswald caps headline, Montserrat body, red #f54d4d button, "official partner" line. Voice: lab-tested and legit before cheap; no grow language except on the seed-brand partner surfaces.
 
 ## Text hierarchy (all four brands)
@@ -52,8 +52,8 @@ Field height is 48px and button height 52px.
 | Brand | L1 deal (desktop / mobile) | L1 qualifier | L2 source | L3 proof | Deal max line | Button |
 |---|---|---|---|---|---|---|
 | Seed Supreme | Archivo 900, wdth 112, sentence case, 25 / 22px, lh 1.18, −.01em | Archivo 700, 15 / 13px, lh 1.3, ink 60% | Work Sans 600, 15px, uppercase chip | Work Sans 400, 15px, ink 64% | 22ch | Work Sans 700, 15px, −.04em, white on the orange gradient, radius 16, underlined |
-| Homegrown | Archivo 900, wdth 122, caps, 26 / 22px, lh 1.06 | Archivo 800, wdth 112, caps, 13 / 12px, +.03em, ink 60% | Helvetica italic, 16px | Helvetica 400, 15px | 17ch | Helvetica 700, 18px, −.04em, #0d523d on #deffb7 + sheen, pill, 1px lime border |
-| ILGM | Boldonse 400, caps, 22 / 18px, lh 1.5, +.05em | Boldonse 400, caps, 13 / 11px, lh 1.5, ink 58% | Figtree italic 600, 16px | Figtree 400, 15px | 22ch | Figtree 700, 17px, white on #DB0B16, radius 8; input stroke #3C3C3C |
+| Homegrown | Druk Bold, caps, 44 / 44px, lh 1.02 | Druk Wide Bold, caps, 12 / 11px, +.02em, ink 60% | Helvetica italic, 16px | Helvetica 400, 15px | 19ch | Helvetica 700, 18px, −.04em, #0d523d on #deffb7 + sheen, pill, 1px lime border, arrow knob |
+| ILGM | Boldonse 400, caps, 22 / 18px, lh 1.5, +.05em | Boldonse 400, caps, 13 / 11px, lh 1.5, ink 58% | Figtree italic 600, 16px | Figtree 400, 15px | 22ch | Figtree 700, 17px, white on #111111 (18.9:1), radius 8; input stroke #3C3C3C |
 | USOA | Oswald 600, caps, 40 / 34px, lh 1.02, +.01em | Oswald 500, caps, 19 / 17px, ink 60% | Montserrat italic 600, 15px | Montserrat 400, 14px, lh 1.55 | 20ch | Oswald 600, caps, 18px, +.06em, white on #f54d4d, radius 4; underlined decline |
 
 Other max line lengths: qualifier 30ch, source line 40ch, proof 38ch.
@@ -69,6 +69,21 @@ Other max line lengths: qualifier 30ch, source line 40ch, proof 38ch.
 - `document.fonts.check()` is not proof that a font loaded, because it returns true for fonts it has never loaded. Check with `document.fonts.load()`.
 - Google Fonts' Boldonse is a tall, condensed heavy face.
 - ilgm.com currently forces Chunk/Aleo and a lilac button onto every `.klaviyo-form` with `!important`. Settle that before an ILGM popup goes live.
+
+**Homegrown surfaces.** White is the default. Dark is the brand's own green gradient, above. The lime button and the accent rule carry over unchanged to both; the card, the ink, the field and the tiles adapt.
+
+**Tiles on a dark card.** Both rules key off the *surface*, never the brand:
+- **A partner logo never sits on a white plate.** The plate reads as a sticker on the card. The mark goes white instead, in this order: use the partner's own white lockup, `logo-<name>-white`, when one exists; otherwise knock the mark out with `filter:brightness(0) invert(1)`, which takes it to black at its original alpha and then lifts it to white.
+- **Knock out only what survives being flattened.** A knockout throws away every internal colour, so it suits a wordmark and ruins a mark whose detail is drawn in colour: THC Farmer's shield flattened to a blank pentagon and Reddit's mark to a blank disc. Those two got real white lockups instead — THC Farmer's four facet greens mapped to white at four opacities, Reddit's face cut out of a white disc with an SVG mask. Check any new partner mark on the dark card before trusting the knockout.
+- The product tile on a PPC strain popup inverts instead — a 6% ink wash with a 14% ink hairline, carrying full-ink text. It must not be a fixed white plate: on a dark card that put white type on near-white and the strain name vanished.
+
+**Partner logo SVGs need intrinsic width and height**, not a `viewBox` alone. Without them the mark has no intrinsic size, and on a dark card — where the plate lets the tile size to its content — it collapses to nothing and the plate renders empty. THC Farmer's mark shipped this way and was invisible until it was given `width="94" height="100"`.
+
+**Brand image libraries.** Homegrown ships fourteen images (`Homegrown Cannabis Co - Images/`, embedded at 340px q80); ILGM ships ten (`ILGM - Images/`, 360px q78). Both are previews only — the full-resolution originals stay in those folders for the Klaviyo upload.
+
+Brand-supplied library images are the brand's own call and are not held to the image-panel brief above, which governs images briefed and generated for the panel. Some of them break it, and two break it in a way worth a second look before they go live: ILGM's `06.jpg` shows a recognisable face *and* a person smoking, and `07.jpg` shows a concentrate being dabbed. Depicting consumption on an email-capture popup is the kind of thing an ESP or ad platform can act on, separately from whether the design works.
+
+**Embedded fonts.** Druk Bold, Druk Wide Bold and PP Agrandir Wide ship inside the file as base64 woff2/ttf, because a double-clicked `file://` page is an opaque origin and cannot fetch a relative font. A single-popup export carries only its own brand's faces; the all-brands overview carries all of them. These are licensed desktop fonts — check the licence covers web embedding before a popup goes live.
 
 **Seed Supreme surface.** Dark #1a1a1a is the default, from the shared canvas. It supersedes the earlier #231a16 email-style dark (Chris's request); if the email template still needs #231a16, that is a separate variant to re-add. A white card stays available as the alternate surface. On the dark card partner logos sit on a white plate.
 
