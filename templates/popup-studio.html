@@ -3820,11 +3820,16 @@ ${POPUP_CSS()}
 /* overview page only */
 html,body{margin:0;background:#eef0f3;color:#14171c;font:14px/1.5 ui-sans-serif,-apple-system,"Segoe UI",sans-serif}
 body{padding:32px}
-h1{font-size:22px;margin:0 0 4px}
-h2{font-size:18px;margin:40px 0 0;padding-top:20px;border-top:1px solid #d3d8df}
-h3{font-size:15px;margin:28px 0 4px}
-h3 small{font-weight:400;color:#687181;margin-left:6px}
-h3 a{color:#3552e8}
+/* Scoped to the gallery's own headings. Bare element selectors here reach
+   into the popups on the page: the popup headline is an h2, so an unscoped
+   h2 rule drew the section divider across every card. The gallery's h1 and
+   h2 are children of body, its h3 a child of section; a popup's heading is
+   neither, so it is out of reach. */
+body > h1{font-size:22px;margin:0 0 4px}
+body > h2{font-size:18px;margin:40px 0 0;padding-top:20px;border-top:1px solid #d3d8df}
+section > h3{font-size:15px;margin:28px 0 4px}
+section > h3 small{font-weight:400;color:#687181;margin-left:6px}
+section > h3 a{color:#3552e8}
 .meta{margin:0 0 12px;color:#454d59;font-size:13px}
 .row{display:grid;grid-template-columns:minmax(0,760px) 375px;gap:28px;align-items:start}
 @media (max-width:1200px){.row{grid-template-columns:1fr}}
