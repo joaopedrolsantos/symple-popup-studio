@@ -581,7 +581,7 @@ higher for square marks (a symbol should sit above cap height, not level with it
 | Mark | Multiplier | Rendered |
 |---|---|---|
 | Grow Weed Easy | 1.45 | 280x52 |
-| Hey Abby | 1.27 | 201x46 |
+| Hey Abby | 0.95 | 150x34 |
 | Reddit | 1.15 | 41x41 |
 | THC Farmer | 1.15 | 39x41 |
 | The Cannigma | 1.09 | 119x39 |
@@ -596,3 +596,17 @@ Six generic options rather than four: each idea now has an outdoor and a studio-
 with packaging and seeds macro studio-only. Partner popups no longer use the low-resolution
 review-board crops; each now carries a library image matched to its source. Everything embeds
 at 620px, the panel's own retina size.
+
+
+### 17 Sep, later
+
+- **Hey Abby** returned to 0.95 (150x34). The measured correction put it at 1.27, which read too
+  large against the rest of the set - the metric equalises apparent shape height, and a wordmark
+  with this much internal air overshoots it.
+- **Proof emphasis** gained an explicit "Remove bold" control. Clicking the whole sentence also
+  clears it, but that was not discoverable.
+- **The PPC strain tile** now offers Seed Supreme's own product photography from the design
+  system (six images, square-cropped) alongside manual upload and a URL field. Labels follow the
+  system's own names - named cultivars where it names them, descriptive where it does not, so
+  nothing is attributed to a strain on a guess.
+- **Packaging generic** swapped to the client's preferred render.
