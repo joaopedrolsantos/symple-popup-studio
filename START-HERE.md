@@ -23,6 +23,7 @@ Source-matched Klaviyo entry popups for **Seed Supreme**, **Homegrown**, **ILGM*
 | `Assets/*.png`, `all-30-popup-images.jpg` | Review boards and the image contact sheet. |
 | `Assets/Screenshot 2026-09-16 *.png` + the PDF | Reviewer comments from ClickUp task #86akjnxu9. |
 | `Homegrown Cannabis Co - Images/` | Homegrown's supplied image library, full resolution. |
+| `USOA Images/` | USOA's supplied image library, full resolution: nine `PRODUCT/` packshots and ten `LIFESTYLE/` shots. |
 
 ---
 
