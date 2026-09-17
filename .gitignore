@@ -1,0 +1,6 @@
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Impeccable's per-machine state (the tool treats this one as local-only)
+.impeccable/config.local.json

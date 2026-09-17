@@ -1,0 +1,72 @@
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Public+Sans:wght@400;600;700&family=JetBrains+Mono:wght@400;500&family=Boldonse&family=Figtree:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#eef0ec;font-family:"Public Sans",sans-serif;color:#172019;width:1300px;padding:36px 40px 40px}
+h1{font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 116;font-weight:800;font-size:30px;margin:0 0 4px;letter-spacing:-.02em}
+.sub{color:#5a665d;font-size:14px;margin:0 0 6px;max-width:1100px}
+.stamp{font-family:"JetBrains Mono",monospace;font-size:11px;color:#8a938c;margin-bottom:22px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 26px}
+.card{background:#fff;border:1px solid #d6dcd3;border-radius:10px;overflow:hidden}
+.pop{display:grid;grid-template-columns:200px 1fr;min-height:320px;background:#fff}
+.pop .ph{background-size:cover;background-position:center}
+.pop .in{padding:22px 22px 18px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.tile{width:150px;height:64px;border-radius:6px;display:flex;align-items:center;justify-content:center;border:1px solid #e6e6e6;margin-bottom:8px;background:#fff}
+.tile img{max-height:44px;max-width:120px;display:block}
+.tile.none{border:1px dashed #ccc;color:#999;font-size:11px}
+.line{font-size:12.5px;font-style:italic;color:#444;margin-bottom:8px}
+.h{font-weight:800;font-size:20px;line-height:1.15;margin:0 0 8px;letter-spacing:-.01em}
+.s{font-size:12.5px;color:#333;margin:0 0 12px;max-width:340px}
+.field{width:100%;max-width:340px;border:1px solid #c9c9c9;border-radius:6px;padding:10px;font-size:13px;color:#888;text-align:left;margin-bottom:8px;background:#fff}
+.btn{width:100%;max-width:340px;padding:12px;border-radius:6px;color:#fff;font-weight:700;font-size:14px}
+.decl{font-size:11.5px;color:#777;margin-top:8px}
+.cap{border-top:1px solid #e3e7e1;padding:9px 12px 10px;font-size:11.5px;color:#3a463d;line-height:1.45;background:#fbfcfa}
+.cap b{color:#172019}
+.cap .st{display:inline-block;margin-top:4px;padding:1px 7px;border-radius:999px;font-size:10.5px;font-weight:600;background:#eaeee6;color:#2f6b47}
+.cap .st.new{background:#fbf1e6;color:#b5651d}
+/* Seed Supreme */
+.b-ss .h{font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 112;color:#231a16}
+.b-ss .btn{background:#ff5c00}
+/* Homegrown */
+.b-hg .h{font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 122;font-weight:900;text-transform:uppercase;font-size:18px;color:#181b1b}
+.b-hg .btn{background:#05c87b;color:#181b1b;border-radius:999px}
+/* ILGM */
+.b-il .pop{background:#DCFCE7}
+.b-il .in{font-family:"Figtree",sans-serif;padding-top:20px}
+.b-il .line{margin-bottom:10px}
+.b-il .s{line-height:1.5;margin-bottom:14px}
+.b-il .h{font-family:"Boldonse",sans-serif;font-weight:400;text-transform:uppercase;font-size:14px;line-height:1.5;letter-spacing:.05em;color:#111;margin:2px 0 10px}
+.b-il .btn{background:#DB0B16;font-family:"Figtree",sans-serif}
+.b-il .field{border-color:#3C3C3C}
+.b-il .tile{border-color:#c5e6cf}
+/* USOA */
+.b-us .in{font-family:"Montserrat",sans-serif}
+.b-us .h{font-family:"Oswald",sans-serif;font-weight:600;text-transform:uppercase;font-size:20px;letter-spacing:.01em;color:#111}
+.b-us .btn{background:#f54d4d;border-radius:4px;font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.05em}
+.b-us .decl{text-decoration:underline}
+.legal{margin-top:22px;font-size:11.5px;color:#5a665d;background:#fff;border:1px solid #d6dcd3;border-radius:8px;padding:10px 14px}
+</style>
+<h1>ILGM: co-branded popups by traffic source</h1>
+<p class="sub">STFNVH spec: mint #DCFCE7 card, Boldonse caps headline, Figtree body, red #DB0B16 button, Bergman illustration. Forms only; no flow edits.</p>
+<div class="stamp">Drafts for review, 15 Sep 2026. Not built in Klaviyo. Partner logos are used for internal review only; each partner's permission to display its logo must be confirmed before deployment.</div>
+<div class="grid"><div class="card b-il">
+<div class="pop"><div class="ph" style="background-image:url(file:///Users/nathan/Documents/symple-intent-strategy/design/popup-img/ilgm-leafly.jpg)"></div><div class="in"><div class="tile" style="background:#ffffff"><img src="file:///Users/nathan/Documents/symple-intent-strategy/design/partners/leafly.png" alt="leafly" style="max-width:96px"></div><div class="line">Official partner of Leafly</div><div class="h">5 free Granddaddy Purple Auto seeds with your first order</div><div class="s">Guaranteed germination. 30 million seeds shipped.</div><div class="field">Email address</div><div class="btn">Claim my 5 seeds</div><div class="decl">No thanks</div></div></div>
+<div class="cap"><b>Trigger:</b> URL contains aff=&lt;Leafly Affiliatly id&gt; (a_aid after the PAP migration)<br><b>Offer:</b> GDP5PACK<br><span class="st new">New. Leafly referrals convert at 0.84% today.</span></div>
+</div><div class="card b-il">
+<div class="pop"><div class="ph" style="background-image:url(file:///Users/nathan/Documents/symple-intent-strategy/design/popup-img/ilgm-thcfarmer.jpg)"></div><div class="in"><div class="tile" style="background:#ffffff"><img src="file:///Users/nathan/Documents/symple-intent-strategy/design/partners/thcfarmer.png" alt="thcfarmer" style="max-width:44px"></div><div class="line">Welcome, THCFarmer</div><div class="h">Buy 10, get 10 free on premium seeds</div><div class="s">Your THCFarmer deal is live. Guaranteed germination on every seed.</div><div class="field">Email address</div><div class="btn">Double my seeds</div><div class="decl">No thanks</div></div></div>
+<div class="cap"><b>Trigger:</b> URL contains utm_campaign=bgo / bgp / bgg (existing banner rules)<br><b>Offer:</b> Buy 10 Get 10 (existing THC Farmer deal)<br><span class="st new">Replaces the three THC Farmer banners (V3iReH, VPKabs, VgL7RR) with a capture step.</span></div>
+</div><div class="card b-il">
+<div class="pop"><div class="ph" style="background-image:url(file:///Users/nathan/Documents/symple-intent-strategy/design/popup-img/ilgm-comparethestrain.jpg)"></div><div class="in"><div class="tile" style="background:#ffffff"><img src="file:///Users/nathan/Documents/symple-intent-strategy/design/partners/comparethestrain.svg" alt="comparethestrain" style="max-width:110px"></div><div class="line">Comparing strains?</div><div class="h">The strain you picked, plus 5 free GDP Auto seeds</div><div class="s">We&#x27;ll open the strain you compared. Guaranteed germination on every seed.</div><div class="field">Email address</div><div class="btn">Show me the strain</div><div class="decl">No thanks</div></div></div>
+<div class="cap"><b>Trigger:</b> URL contains aff=&lt;comparethestrain id&gt;; link deep-linked to the strain page<br><b>Offer:</b> GDP5PACK<br><span class="st new">New. 815 sessions land on an empty /search at 0.12% today.</span></div>
+</div><div class="card b-il">
+<div class="pop"><div class="ph" style="background-image:url(file:///Users/nathan/Documents/symple-intent-strategy/design/popup-img/ilgm-cannabissensei.jpg)"></div><div class="in"><div class="tile" style="background:#ffffff"><img src="file:///Users/nathan/Documents/symple-intent-strategy/design/partners/cannabissensei.png" alt="cannabissensei" style="max-width:110px"></div><div class="line">Cannabis Sensei reader?</div><div class="h">5 free Granddaddy Purple Auto seeds with your first order</div><div class="s">Grow guides, a forum and a germination guarantee after the sale.</div><div class="field">Email address</div><div class="btn">Claim my 5 seeds</div><div class="decl">No thanks</div></div></div>
+<div class="cap"><b>Trigger:</b> URL contains aff=&lt;Cannabis Sensei id&gt; or referrer cannabissensei.com<br><b>Offer:</b> GDP5PACK<br><span class="st new">New. 767 sessions at 2.48%.</span></div>
+</div><div class="card b-il">
+<div class="pop"><div class="ph" style="background-image:url(file:///Users/nathan/Documents/symple-intent-strategy/design/popup-img/ilgm-forum.jpg)"></div><div class="in"><div class="tile" style="flex-direction:column;gap:3px"><img src="file:///Users/nathan/Documents/symple-intent-strategy/design/web/ilgm-logo.svg" style="height:22px"><span style="font-size:9.5px;color:#555;font-family:JetBrains Mono,monospace">ilgmforum.com</span></div><div class="line">Hey, forum grower</div><div class="h">5 free Granddaddy Purple Auto seeds with your first order</div><div class="s">Post the grow, we&#x27;ll follow it. Guaranteed germination on every seed.</div><div class="field">Email address</div><div class="btn">Claim my 5 seeds</div><div class="decl">No thanks</div></div></div>
+<div class="cap"><b>Trigger:</b> URL contains ilgmforum.com (existing STFNVH rule, 15s delay, 5-day cookie)<br><b>Offer:</b> GDP5PACK (the arm 91% of forum visitors already see)<br><span class="st ">Restyle of STFNVH, the reference form. Its 3.64M reported views look like a counting artefact; check in the UI before reading its 0.01% rate.</span></div>
+</div><div class="card b-il">
+<div class="pop"><div class="ph" style="background-image:url(file:///Users/nathan/Documents/symple-intent-strategy/design/popup-img/ilgm-blog.jpg)"></div><div class="in"><div class="tile" style="flex-direction:column;gap:3px"><img src="file:///Users/nathan/Documents/symple-intent-strategy/design/partners/ilove-book.png" style="height:34px"><span style="font-size:9.5px;color:#555;font-family:JetBrains Mono,monospace">ilovegrowingmarijuana.com</span></div><div class="line">Reading the blog?</div><div class="h">Get the 72-hour germination checks, then 5 free GDP Auto seeds</div><div class="s">The checks by email first, no code. The seeds when you&#x27;re ready to start.</div><div class="field">Email address</div><div class="btn">Send me the checks</div><div class="decl">No thanks</div></div></div>
+<div class="cap"><b>Trigger:</b> URL contains ilovegrowingmarijuana.com (existing UL76TY rule)<br><b>Offer:</b> Content first; GDP5PACK in email 4 (the learner branch)<br><span class="st new">Replaces the UL76TY A/B/C test (20% off vs GDP vs guarantee education) with the education-first arm; the blog embeds for the Grow Bible are repointed to the list the flow watches.</span></div>
+</div></div>
+<div class="legal">Every popup writes the same properties at submit: acq_partner, offer_shown (the code on this popup), acq_intent, and the grow or category answers on later steps. One first-order code per popup; the welcome flow's Email 1 repeats it. Where a trigger says "PAP id", Riley B fills in the affiliate's a_aid value from the PAP account list; Affiliatly ids (aff=) apply on ILGM until the PAP migration.</div>

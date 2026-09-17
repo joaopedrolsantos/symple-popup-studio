@@ -1,0 +1,18 @@
+<!-- @dsCard group="Brand" height=160 subtitle="Sizes and tones, on a dark ground" -->
+<div id="root" style="padding:24px;"></div>
+<script>
+(function () {
+  var h = window.React.createElement;
+  var root = window.ReactDOM.createRoot(document.getElementById('root'));
+  var C = window.SeedSupremeDesignSystem_06bac2;
+  
+  root.render(
+    h('div', { style: { background: 'var(--surface-dark,#1a1a1a)', padding: '32px', borderRadius: '8px', display: 'flex', gap: '20px', alignItems: 'center', flexWrap: 'wrap' } },
+      h(C.GradientButton, { size: 'lg', tone: 'gradient' }, 'Shop seeds'),
+      h(C.GradientButton, { size: 'md', tone: 'gradient', icon: 'arrow-right' }, 'Shop seeds'),
+      h(C.GradientButton, { size: 'sm', tone: 'dark' }, 'Learn more')
+    )
+  );
+
+})();
+</script>

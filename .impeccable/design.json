@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-16T00:00:00Z",
+  "title": "Design System: Popup Studio",
+  "extensions": {
+    "colorMeta": {
+      "ui-sel": { "role": "primary", "displayName": "Instrument Blue", "canonical": "#3552e8", "tonalRamp": ["#0a0f33","#121c5c","#1c2b8c","#2740bd","#3552e8","#7688f2","#aab5f8","#edf0fe"] },
+      "ui-ink": { "role": "primary", "displayName": "Command Ink", "canonical": "#14171c", "tonalRamp": ["#0a0c0f","#14171c","#252a33","#3a414d","#454d59","#687181","#a3abb8","#e3e6eb"] },
+      "ss-accent": { "role": "secondary", "displayName": "Seed Supreme Orange", "canonical": "#ff5c00", "tonalRamp": ["#3d1600","#5c2100","#7a2c00","#b84200","#ff5c00","#ff8a47","#ffb389","#ffe4d2"] },
+      "hmgrn-accent": { "role": "secondary", "displayName": "Homegrown Green", "canonical": "#05c87b", "tonalRamp": ["#012e1d","#01452b","#025c3a","#039457","#05c87b","#4bdda3","#8dead0","#d6f9eb"] },
+      "ilgm-accent": { "role": "secondary", "displayName": "ILGM Red", "canonical": "#DB0B16", "tonalRamp": ["#340306","#4d0409","#68060c","#9c0810","#db0b16","#f0524e","#f7908c","#fcd6d3"] },
+      "usoa-accent": { "role": "secondary", "displayName": "USOA Red", "canonical": "#f54d4d", "tonalRamp": ["#3d0d0d","#5c1414","#7a1c1c","#b82b2b","#f54d4d","#f88585","#fbb2b2","#fde3e3"] },
+      "ilgm-surface": { "role": "secondary", "displayName": "ILGM Mint Card", "canonical": "#DCFCE7", "tonalRamp": ["#0b2f1c","#11482a","#186139","#2a9159","#4dbf80","#8fdcb0","#dcfce7","#f2fef7"] },
+      "ss-surface-dark": { "role": "secondary", "displayName": "Seed Supreme Dark Card", "canonical": "#231a16", "tonalRamp": ["#120d0b","#231a16","#3a2b24","#5b4c45","#7d6b62","#a99a92","#d2c8c2","#f2ece9"] },
+      "ui-ok": { "role": "tertiary", "displayName": "Go Green", "canonical": "#16703f", "tonalRamp": ["#06210f","#0a3b1f","#0f572e","#16703f","#249a5b","#4fc183","#96dcb4","#e6f5ec"] },
+      "ui-warn": { "role": "tertiary", "displayName": "Confirm Amber", "canonical": "#9a5200", "tonalRamp": ["#2b1600","#452400","#673500","#9a5200","#c97400","#eda03a","#f6c684","#fff2dc"] },
+      "ui-bad": { "role": "tertiary", "displayName": "Blocking Red", "canonical": "#b42318", "tonalRamp": ["#300a06","#4c0f0a","#6d170f","#b42318","#d94c3f","#e88178","#f3b5b0","#fdecea"] },
+      "ui-canvas": { "role": "neutral", "displayName": "Stage Grey", "canonical": "#eef0f3", "tonalRamp": ["#14171c","#2a2f37","#454d59","#687181","#a3abb8","#cfd5dd","#eef0f3","#f7f8fa"] },
+      "ui-panel": { "role": "neutral", "displayName": "Panel White", "canonical": "#ffffff", "tonalRamp": ["#14171c","#2a2f37","#454d59","#687181","#cfd5dd","#e3e6eb","#f7f8fa","#ffffff"] },
+      "ui-line": { "role": "neutral", "displayName": "Hairline", "canonical": "#e3e6eb", "tonalRamp": ["#1b1f25","#2f353e","#454d59","#687181","#a3abb8","#cfd5dd","#e3e6eb","#f7f8fa"] },
+      "ui-placeholder": { "role": "neutral", "displayName": "Placeholder Ink", "canonical": "#6a7183", "tonalRamp": ["#14171c","#252a33","#3a414d","#525a69","#6a7183","#98a0ae","#c3c9d3","#eef0f3"] }
+    },
+    "typographyMeta": {
+      "deal": { "displayName": "L1 Deal", "purpose": "The offer. The largest thing on the card, full ink, text-wrap balance. Brand values: Seed Supreme Archivo 800 wdth 112 34/29px lh 1.02 -.02em sentence case, measure 15ch; Homegrown Archivo 900 wdth 122 caps 26/22px lh 1.06, 17ch; ILGM Boldonse 400 caps 22/18px lh 1.5 +.05em, 22ch; USOA Oswald 600 caps 40/34px lh 1.02 +.01em, 20ch." },
+      "qualifier": { "displayName": "L1 Qualifier", "purpose": "Approved words before and after the deal, same display face, much smaller, ink 58-62%. 4px above the deal or 6px below it. Measure 30ch." },
+      "source": { "displayName": "L2 Source Line", "purpose": "Why the visitor arrived. Body face italic, ink 84-86%, preceded by a 14x2px accent rule. Measure 40ch." },
+      "proof": { "displayName": "L3 Proof", "purpose": "One sentence of guarantee or lab proof. Body face regular, ink 72-74%. Measure 38ch." },
+      "cta": { "displayName": "CTA", "purpose": "The single button label, in the brand's own CTA face and case." },
+      "ui-body": { "displayName": "Chrome Body", "purpose": "The workbench base at 13.5px/1.45 in the platform UI stack, so the tool reads as the operating system rather than a brand." },
+      "ui-mono": { "displayName": "Handoff Mono", "purpose": "Machine values only: trigger rule, offer code, Klaviyo properties. Anything meant to be pasted exactly." }
+    },
+    "shadows": [
+      { "name": "floating-layer", "value": "0 12px 32px -12px rgb(20 23 28 / .28), 0 2px 6px -2px rgb(20 23 28 / .12)", "purpose": "Export menu, mobile inspector drawer, toast. Anything temporarily above the shell." },
+      { "name": "popup-lift", "value": "0 18px 50px -18px rgb(0 0 0 / .35), 0 0 0 1px rgb(0 0 0 / .06)", "purpose": "The popup card. The long drop reads as a modal; the 6% ring is what edges a white card against the light canvas. Both halves are load-bearing." },
+      { "name": "segment-selected", "value": "0 1px 2px rgb(20 23 28 / .12), 0 0 0 1px rgb(20 23 28 / .04)", "purpose": "The pressed tab inside a segmented control, lifted off its track." },
+      { "name": "cta-rest", "value": "0 1px 0 rgb(0 0 0 / .08), 0 6px 14px -8px rgb(0 0 0 / .32)", "purpose": "The popup CTA, the one control in the system with a resting shadow." },
+      { "name": "focus-halo", "value": "0 0 0 3px rgb(53 82 232 / .16)", "purpose": "Field focus in the chrome, paired with a ui-sel stroke." },
+      { "name": "inset-hairline", "value": "inset 0 0 0 1px #e3e6eb", "purpose": "The default way to draw an edge inside the chrome: avatars, thumbnails, focal preview, scale badge, ghost tags." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "The system's only easing curve." },
+      { "name": "control", "value": "120-160ms", "purpose": "Colour and border transitions on buttons, fields, rows, segments. No movement." },
+      { "name": "focal-pin", "value": "180ms", "purpose": "Focal pin and mobile-crop band repositioning." },
+      { "name": "frame-swap", "value": "220ms", "purpose": "Canvas frame swap when the selected popup changes." },
+      { "name": "drawer", "value": "240ms", "purpose": "Inspector drawer slide-in below 1080px." },
+      { "name": "reduced-motion-guard", "value": "@media (prefers-reduced-motion: reduce)", "purpose": "Declared twice on purpose: once in studio-css, once inside popup-css, because exports carry the popup block alone. Do not de-duplicate." }
+    ],
+    "breakpoints": [
+      { "name": "popup-mobile", "value": "@container popup (max-width: 520px)" },
+      { "name": "subtitle-drop", "value": "1540px" },
+      { "name": "panel-narrow", "value": "1280px" },
+      { "name": "panel-drawer", "value": "1080px" },
+      { "name": "single-column", "value": "760px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Popup CTA",
+      "kind": "button",
+      "refersTo": "popup-cta",
+      "description": "The single ask on every popup, filled with the brand accent. The only control in the system with a resting shadow.",
+      "html": "<button class=\"ds-popup-cta\">Claim my 4 seeds</button>",
+      "css": ".ds-popup-cta { height: 52px; width: 280px; border: 0; border-radius: 8px; cursor: pointer; background: #ff5c00; color: #fff; font-family: Archivo, Helvetica Neue, Arial, sans-serif; font-size: 17px; font-weight: 800; font-stretch: 108%; box-shadow: 0 1px 0 rgb(0 0 0 / .08), 0 6px 14px -8px rgb(0 0 0 / .32); transition: filter .15s ease, transform .15s ease; } .ds-popup-cta:hover { filter: brightness(.94); } .ds-popup-cta:active { transform: translateY(1px); } .ds-popup-cta:focus-visible { outline: 2px solid #3552e8; outline-offset: 2px; } @media (prefers-reduced-motion: reduce) { .ds-popup-cta { transition: none; } .ds-popup-cta:active { transform: none; } }"
+    },
+    {
+      "name": "Popup Email Field",
+      "kind": "input",
+      "refersTo": "popup-field",
+      "description": "The one input on a popup. Caret is the brand accent, never the studio blue, because exports must resolve inside brand tokens.",
+      "html": "<input class=\"ds-popup-field\" type=\"email\" placeholder=\"Email address\">",
+      "css": ".ds-popup-field { height: 48px; width: 280px; padding: 0 18px; border: 1px solid #c9c4c1; border-radius: 8px; background: #fff; font: 400 15px Open Sans, Helvetica Neue, Arial, sans-serif; color: rgb(23 17 14); caret-color: #ff5c00; } .ds-popup-field::placeholder { color: rgb(23 17 14 / .62); } .ds-popup-field:focus-visible { outline: 2px solid #3552e8; outline-offset: 2px; }"
+    },
+    {
+      "name": "Popup Source Line",
+      "kind": "custom",
+      "refersTo": "source",
+      "description": "L2: why the visitor arrived. Italic body face at 84-86% ink, always preceded by a 14x2px accent rule.",
+      "html": "<p class=\"ds-source\">Official partner of Leafly</p>",
+      "css": ".ds-source { display: flex; align-items: center; gap: 8px; margin: 0; max-width: 40ch; font-family: Open Sans, Helvetica Neue, Arial, sans-serif; font-style: italic; font-size: 16px; font-weight: 600; line-height: 1.3; color: rgb(23 17 14 / .84); text-wrap: pretty; } .ds-source::before { content: \"\"; flex: none; width: 14px; height: 2px; border-radius: 2px; background: #ff5c00; }"
+    },
+    {
+      "name": "Popup Headline (split)",
+      "kind": "custom",
+      "refersTo": "deal",
+      "description": "L1 split into qualifier / deal / qualifier by the approved copy's square brackets. The deal is the largest thing on the card; nothing may outrank it.",
+      "html": "<h2 class=\"ds-hl\"><span class=\"ds-deal\">4 free Purple Kush seeds</span><span class=\"ds-qual ds-post\">with your first order</span></h2>",
+      "css": ".ds-hl { margin: 0; padding: 0; font-family: Archivo, Helvetica Neue, Arial, sans-serif; line-height: 1; } .ds-hl > span { display: block; } .ds-deal { max-width: 15ch; font-size: 34px; line-height: 1.02; font-weight: 800; font-stretch: 112%; letter-spacing: -.02em; color: rgb(23 17 14); text-wrap: balance; } .ds-qual { max-width: 30ch; font-size: 18px; line-height: 1.22; font-weight: 600; letter-spacing: -.005em; color: rgb(23 17 14 / .62); text-wrap: balance; } .ds-post { margin-top: 6px; }"
+    },
+    {
+      "name": "Chrome Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The workbench's commit action. Ink, not blue: blue means selection, ink means go.",
+      "html": "<button class=\"ds-btn-primary\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 4v11m0 0 4-4m-4 4-4-4M5 19h14\"/></svg>Export</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 6px; height: 32px; padding: 0 12px; border: 1px solid #14171c; border-radius: 8px; background: #14171c; color: #fff; font: 560 13px/1.45 ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; cursor: pointer; transition: background-color .15s, border-color .15s, box-shadow .15s; } .ds-btn-primary .ds-ico { width: 16px; height: 16px; flex: none; } .ds-btn-primary:hover { background: #2a2f37; border-color: #2a2f37; } .ds-btn-primary:active { background: #14171c; } .ds-btn-primary:focus-visible { outline: 2px solid #3552e8; outline-offset: 2px; }"
+    },
+    {
+      "name": "Chrome Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Every workbench field. Locked approved copy uses the read-only variant: sunken, but full-strength ink, because it is approved text and not disabled input.",
+      "html": "<input class=\"ds-input\" placeholder=\"Paste a production image URL\"><input class=\"ds-input ds-input-locked\" value=\"Official partner of Leafly\" readonly>",
+      "css": ".ds-input { display: block; width: 260px; height: 34px; margin-bottom: 8px; padding: 7px 10px; border: 1px solid #cfd5dd; border-radius: 8px; background: #fff; font: 13.5px/1.45 ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; color: #14171c; caret-color: #3552e8; transition: border-color .15s, box-shadow .15s, background-color .15s; } .ds-input::placeholder { color: #6a7183; } .ds-input:hover { border-color: #b9c0ca; } .ds-input:focus { outline: none; border-color: #3552e8; box-shadow: 0 0 0 3px rgb(53 82 232 / .16); } .ds-input-locked { background: #f7f8fa; border-color: #e3e6eb; color: #14171c; cursor: default; }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "nav",
+      "refersTo": "segment-item",
+      "description": "Variant and device pickers. A grey track with a deliberate 2px inset; the selected button turns white and lifts.",
+      "html": "<div class=\"ds-seg\"><button class=\"ds-seg-btn\" aria-pressed=\"true\">Partner</button><button class=\"ds-seg-btn\" aria-pressed=\"false\">PPC strain</button><button class=\"ds-seg-btn\" aria-pressed=\"false\">PPC generic</button></div>",
+      "css": ".ds-seg { display: inline-flex; padding: 2px; gap: 2px; background: #e8ebef; border-radius: 9px; } .ds-seg-btn { display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border: 0; border-radius: 7px; background: transparent; color: #454d59; font: 560 12.5px ui-sans-serif, -apple-system, Segoe UI, Roboto, Arial, sans-serif; cursor: pointer; transition: background-color .15s, color .15s, box-shadow .15s; } .ds-seg-btn:hover { color: #14171c; } .ds-seg-btn[aria-pressed=\"true\"] { background: #fff; color: #14171c; box-shadow: 0 1px 2px rgb(20 23 28 / .12), 0 0 0 1px rgb(20 23 28 / .04); } .ds-seg-btn:focus-visible { outline: 2px solid #3552e8; outline-offset: 2px; }"
+    },
+    {
+      "name": "Status Tag",
+      "kind": "chip",
+      "refersTo": "tag-warn",
+      "description": "The status vocabulary: green confirmed, amber confirm-before-build, red blocking, grey structural. The colour never travels without its word.",
+      "html": "<span class=\"ds-tag ds-tag-ok\">Live</span><span class=\"ds-tag ds-tag-warn\">Confirm code</span><span class=\"ds-tag ds-tag-bad\">Missing image</span><span class=\"ds-tag ds-tag-new\">New</span>",
+      "css": ".ds-tag { display: inline-flex; align-items: center; gap: 4px; height: 20px; margin-right: 6px; padding: 0 7px; border-radius: 999px; font: 600 11px ui-sans-serif, -apple-system, Segoe UI, Roboto, Arial, sans-serif; white-space: nowrap; background: #eceff3; color: #454d59; } .ds-tag-ok { background: #e6f5ec; color: #16703f; } .ds-tag-warn { background: #fff2dc; color: #9a5200; } .ds-tag-bad { background: #fdecea; color: #b42318; } .ds-tag-new { background: transparent; color: #454d59; box-shadow: inset 0 0 0 1px #cfd5dd; }"
+    },
+    {
+      "name": "Source Rail Row",
+      "kind": "nav",
+      "refersTo": "source-row",
+      "description": "The product's index. A 40px avatar, a two-line name and source line, a right-hand status column. The current row takes the selection tint and its inset ring.",
+      "html": "<button class=\"ds-src\" aria-current=\"true\"><span class=\"ds-av\">LF</span><span class=\"ds-t\"><b>Leafly</b><small>Official partner of Leafly</small></span><span class=\"ds-side\"><span class=\"ds-tag ds-tag-warn\">Confirm code</span></span></button>",
+      "css": ".ds-src { width: 300px; display: grid; grid-template-columns: 40px minmax(0,1fr) auto; align-items: center; gap: 10px; padding: 8px; border: 0; border-radius: 10px; background: transparent; text-align: left; cursor: pointer; transition: background-color .15s; } .ds-src:hover { background: #f3f5f8; } .ds-src[aria-current=\"true\"] { background: #edf0fe; box-shadow: inset 0 0 0 1px #c3cdfb; } .ds-src:focus-visible { outline: 2px solid #3552e8; outline-offset: 2px; } .ds-av { width: 40px; height: 40px; border-radius: 9px; background: #fff; box-shadow: inset 0 0 0 1px #e3e6eb; display: grid; place-items: center; font: 700 12px ui-sans-serif, -apple-system, Arial, sans-serif; color: #454d59; } .ds-t { min-width: 0; } .ds-t b { display: block; font: 620 13px ui-sans-serif, -apple-system, Arial, sans-serif; color: #14171c; } .ds-t small { display: block; font: 12px ui-sans-serif, -apple-system, Arial, sans-serif; color: #687181; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .ds-tag { display: inline-flex; align-items: center; height: 18px; padding: 0 6px; border-radius: 999px; font: 600 10.5px ui-sans-serif, Arial, sans-serif; } .ds-tag-warn { background: #fff2dc; color: #9a5200; }"
+    },
+    {
+      "name": "Deal Marker",
+      "kind": "custom",
+      "refersTo": "popup-card",
+      "description": "The system's signature control: approved headline words as clickable chips, so marking the deal is a click rather than typed brackets. Selected words fill ink; the anchor carries the selection ring.",
+      "html": "<div class=\"ds-words\"><button class=\"ds-word ds-in ds-anchor\">4</button><button class=\"ds-word ds-in\">free</button><button class=\"ds-word ds-in\">Purple</button><button class=\"ds-word ds-in\">Kush</button><button class=\"ds-word ds-in\">seeds</button><button class=\"ds-word\">with</button><button class=\"ds-word\">your</button><button class=\"ds-word\">first</button><button class=\"ds-word\">order</button></div>",
+      "css": ".ds-words { display: flex; flex-wrap: wrap; gap: 4px; width: 300px; padding: 8px; border: 1px solid #e3e6eb; border-radius: 8px; background: #f7f8fa; } .ds-word { border: 1px solid transparent; border-radius: 6px; padding: 3px 6px; background: #fff; box-shadow: 0 0 0 1px #e3e6eb; font: 13px/1.3 ui-sans-serif, -apple-system, Arial, sans-serif; color: #14171c; cursor: pointer; transition: background-color .12s, color .12s, box-shadow .12s; } .ds-word:hover { box-shadow: 0 0 0 1px #b9c0ca; } .ds-in { background: #14171c; color: #fff; box-shadow: none; } .ds-anchor { box-shadow: 0 0 0 2px #3552e8; } .ds-word:focus-visible { outline: 2px solid #3552e8; outline-offset: 2px; }"
+    },
+    {
+      "name": "Handoff Cell",
+      "kind": "card",
+      "refersTo": "panel-card",
+      "description": "The strip under the canvas that carries the build values. Machine text is mono in a sunken, hairlined block so a value meant to be pasted exactly looks unlike prose.",
+      "html": "<div class=\"ds-handoff\"><dt>Trigger</dt><dd><code>URL contains a_aid=leafly</code></dd></div>",
+      "css": ".ds-handoff { width: 280px; padding: 12px 14px; background: #fff; border: 1px solid #e3e6eb; border-radius: 12px; } .ds-handoff dt { font: 650 11.5px ui-sans-serif, -apple-system, Arial, sans-serif; color: #687181; margin-bottom: 4px; } .ds-handoff dd { margin: 0; } .ds-handoff code { display: block; font: 12px/1.5 ui-monospace, SF Mono, Menlo, Consolas, monospace; color: #14171c; background: #f7f8fa; border: 1px solid #e3e6eb; border-radius: 6px; padding: 5px 8px; white-space: pre-wrap; overflow-wrap: anywhere; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Workbench",
+    "overview": "Popup Studio is two systems in one file, and they are deliberately built to be told apart at a glance. The workbench is a cool, near-silent instrument panel: white panels, hairline dividers, near-black ink, a dotted grey stage. The popups sitting on that stage are loud, branded, full-colour objects. Every decision in the chrome is made so that the popup is the only thing in the frame with a voice. Marketing people, not developers, open this file; the chrome uses plain-English labels and never a code-editor idiom.\n\nThe chrome is a form-builder grammar the team already knows - brand tabs across a 56px top bar, a 288px source rail on the left, a scrolling canvas in the middle, a 340px properties panel on the right - and it refuses the thumbnail-grid template gallery outright. You do not shop for a popup; you select a traffic source and the exact popup appears at true size. Density is tight but never cramped: 32px controls, 13.5px UI text, 8px radii, colour reserved for state.\n\nThe popup system underneath is one layout and one type hierarchy with four brand skins. Every brand sets the same custom properties with its own values, so a layout change lands in all four brands at once and a brand change is a token edit, never a rule edit. That block (popup-css) is what every export carries, so it is a shipping design system in its own right, and its rules are binding on anything built from an export.",
+    "keyCharacteristics": [
+      "Cool neutral chrome (ui-canvas through ui-ink) with exactly one interactive blue (ui-sel) reserved for selection and focus.",
+      "Brand colour appears in the chrome only as a 10px brand dot; everywhere else it lives inside the popup.",
+      "One popup layout, four token skins: no per-brand layout CSS exists.",
+      "Deliberately unequal vertical rhythm inside the popup so elements group into deal / proof / ask.",
+      "Status has three colours and always carries a word: green, amber, red never speak alone.",
+      "True-size-first canvas; the caption never claims a size the canvas is not showing."
+    ],
+    "rules": [
+      { "name": "The One Blue Rule", "body": "ui-sel means selection or focus and nothing else. If a blue element is not telling you where you are or where your keyboard is, it is wrong.", "section": "colors" },
+      { "name": "The Brand-Stays-Inside Rule", "body": "Brand colour never enters the chrome except as the 10px tab dot. The workbench has no brand; it holds four.", "section": "colors" },
+      { "name": "The Legible Placeholder Rule", "body": "Placeholder ink is a floor, not a taste. In the popup, rgb(var(--ink) / .62) is the lowest alpha that clears 4.5:1 on all four brand cards and the Seed Supreme dark card (measured 4.84-6.69:1); in the chrome, ui-placeholder is the equivalent at 4.88:1. Never lighten either.", "section": "colors" },
+      { "name": "The Instruction-Outranks-Placeholder Rule", "body": "A real instruction (.hint, ui-ink-2, 8.6:1) is always darker than a placeholder. Help text must never look fainter than the text it is helping with.", "section": "colors" },
+      { "name": "The Word-With-The-Colour Rule", "body": "Green, amber and red never carry meaning alone. Every status colour ships with a label or a sprite icon in the same tone.", "section": "colors" },
+      { "name": "The Deal-Is-Biggest Rule", "body": "Nothing on the card - logo, button, source line, qualifier - may be larger or heavier than the deal. Headlines are split into qualifier / deal / qualifier by the square brackets in the approved copy; with no brackets, the whole headline is the deal.", "section": "typography" },
+      { "name": "The Token-Not-The-Rule Rule", "body": "Every brand difference is a custom property on the brand's [data-brand] block. Layout, measures and the hierarchy live in shared class rules and are never redeclared per brand. To change a brand, change the token; if you find yourself writing a per-brand layout rule, the system is being broken.", "section": "typography" },
+      { "name": "The No-Orphan Rule", "body": "Headlines use text-wrap: balance, source and proof use text-wrap: pretty, and the last two words of a line group are joined with a non-breaking space when they total 20 characters or fewer. Check at 760px and 375px. A one-word last line is a defect; fix it by moving the brackets or the non-breaking space, never by rewording approved copy.", "section": "typography" },
+      { "name": "The Real-Load Rule", "body": "Font presence is proved with document.fonts.load(), never document.fonts.check(), which returns true for faces it has never fetched.", "section": "typography" },
+      { "name": "The Honest Scale Rule", "body": "The stage scales frames down only when it wins real room: below FIT_FLOOR = 0.98 it applies a floor-rounded zoom (never below 45%); between 0.98 and 1 it leaves the cards at true size and lets the stage scroll. Whenever a scale is applied, a \"shown at N%\" badge is printed beside the px caption. The caption may never claim a size the canvas is not showing.", "section": "layout" },
+      { "name": "The Hairline-First Rule", "body": "Structure is drawn with 1px lines and tonal fills. Reach for a shadow only when an element genuinely floats above the shell.", "section": "elevation" },
+      { "name": "The Duplicated Guard Rule", "body": "The prefers-reduced-motion guard exists twice on purpose: once in studio-css for the workbench, and again inside popup-css, because an export carries that block alone and would otherwise ship unguarded motion on .cta. Do not de-duplicate these.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do change a brand by editing its [data-brand] custom properties. Layout and hierarchy rules are shared and must stay shared.",
+      "Do keep the deal the largest and heaviest thing on the card, and split every headline with [square brackets].",
+      "Do keep placeholder ink at rgb(var(--ink) / .62) in the popup and #6a7183 in the chrome, and keep .hint darker than both.",
+      "Do print \"shown at N%\" whenever the canvas scales a frame, and leave frames at true size above FIT_FLOOR = 0.98.",
+      "Do keep the two prefers-reduced-motion guards - the one in popup-css is what protects exported files.",
+      "Do keep the popup's caret on --accent and the studio's on ui-sel: exports must resolve entirely within brand tokens.",
+      "Do draw every icon from the inline #i-* sprite, at 16px, stroke 1.7, coloured by currentColor.",
+      "Do treat every embedded raster as a low-res preview that carries its origin in the file header (cropped from all-30-popup-images.jpg, *-partner-popups.png, ppc-strain-popups.png; none generated for this file) and is to be replaced by a production https URL before build. Every image slot accepts a URL for exactly this reason.",
+      "Do pair every status colour with a word or a sprite icon.",
+      "Do use container queries for popup breakpoints; the card responds to its own width, not the window."
+    ],
+    "donts": [
+      "Don't use ui-sel for anything but selection and focus, and don't let brand colour into the chrome beyond the 10px tab dot.",
+      "Don't lighten any placeholder, hint, or ink alpha below the recorded values; they are contrast floors measured against all four brands and the dark card.",
+      "Don't add a per-brand layout rule. If a brand needs a different value, it needs a token.",
+      "Don't stand a Unicode glyph in for an icon. The popup's close control still carries a x set in system-ui; that is a carried defect to be replaced with the sprite, not a pattern to copy.",
+      "Don't give chrome surfaces a resting shadow. Hairlines and tonal fills do the structural work; shadow means floating.",
+      "Don't reword approved copy to fix a layout problem - move the brackets or the non-breaking space instead.",
+      "Don't fix the five knowingly accepted findings: the 2px segmented-control track inset and the tab strip's own padding (both are the control's idiom), the popup's thin-ring-plus-wide-shadow pair (the ring is what edges a white card on a light canvas), the diagonal hatch (it means image missing, it is not decoration), and Open Sans (it is Seed Supreme's approved body face; the brand token wins over a generic overuse heuristic).",
+      "Don't resolve, in the design system, what the product has left open: ILGM's token direction against ilgm.com's live Chunk/Aleo !important override on .klaviyo-form, which Boldonse ILGM expects, the three offer codes marked confirm (LEAFLY20 on Seed Supreme, ILGM20, CANNIGMA20), and partner logo permissions - which are required before any partner popup goes live."
+    ]
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "title": "Popup Studio: choose the workbench world",
+  "question": "The roll assigned the Seed Vault Index. Keep it, take an alternate, or re-roll. The popups keep their brand looks whatever you pick; this choice sets the workbench around them.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Seed Vault Index",
+      "kicker": "THE ROLL",
+      "lineage": "Seed-bank accession cabinets: steel drawers, label holders, accession cards, viability stamps",
+      "thesis": "Every popup is an accession: filed by brand drawer, catalogued by source, stamped when it passes QA.",
+      "palette": ["#e9ecea", "#c9cfcc", "#2b3230", "#0f1413", "#2f6fed"],
+      "materials": ["powder-coated steel drawer fronts", "printed accession cards", "rubber viability stamps"],
+      "viewport": "Left: four brand drawers with label holders, each opening into its accession cards (source, trigger, code). Centre: the pulled popup at desktop and mobile on a cool steel tray. Right: the accession card, with locked copy fields, image slots, QA stamps and Export.",
+      "risk": "Reads cold and clinical if the stamps and label holders are drawn timidly; the steel must stay quiet so the brand colours carry.",
+      "raised": [
+        {"from": "challenger-rain-garden", "raise": "Colour is law: a brand's colour appears only on its own drawer label and its popups, never as workbench chrome."},
+        {"from": "challenger-deep-dive", "raise": "One axis rules every line: a single accession spine aligns brand → source → variant → QA → export down the left edge."},
+        {"from": "challenger-metro", "raise": "Chrome deleted: no boxed panels; structure comes from label holders, ruled type and the tray edge only."},
+        {"from": "challenger-cracktro", "raise": "State is depth: the pulled accession lifts forward; everything filed recedes a step in tone."}
+      ],
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "brand drawers + accession list", "x": 0, "y": 0, "w": 3, "h": 10},
+        {"label": "tray: popup desktop", "x": 3, "y": 1, "w": 6, "h": 6, "accent": true},
+        {"label": "tray: mobile + variants strip", "x": 3, "y": 7, "w": 6, "h": 3},
+        {"label": "accession card: copy, image, QA, export", "x": 9, "y": 0, "w": 3, "h": 10}
+      ]}
+    },
+    {
+      "id": "model-pick",
+      "label": "Form Builder Grammar",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "The Klaviyo and Figma editor layout the team already uses daily",
+      "thesis": "A step rail, a canvas and a properties panel, so it feels like the tools they already use.",
+      "palette": ["#ffffff", "#f4f5f7", "#1f2328", "#5b6470", "#3d5afe"],
+      "materials": ["flat panels", "segmented device toggle", "inline form fields"],
+      "viewport": "Top bar with brand tabs; left step rail (Source, Variant, Copy, Image, QA, Export); centre canvas with a device toggle; right properties panel.",
+      "risk": "The most familiar option, and where most runs in this category land; low learning cost, but no identity of its own.",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "top bar: brand tabs", "x": 0, "y": 0, "w": 12, "h": 1},
+        {"label": "step rail", "x": 0, "y": 1, "w": 2, "h": 9},
+        {"label": "canvas + device toggle", "x": 2, "y": 1, "w": 7, "h": 9, "accent": true},
+        {"label": "properties", "x": 9, "y": 1, "w": 3, "h": 9}
+      ]}
+    },
+    {
+      "id": "challenger-darkroom",
+      "label": "Proofing Darkroom",
+      "verdict": "competitive",
+      "lineage": "Darkroom printing stations under safelight",
+      "thesis": "Popups move through fixed stations (compose, test strip, fix, dispatch), and the variants sit side by side like test strips before you commit.",
+      "palette": ["#1a1512", "#3a2f28", "#d9d2c7", "#f0a23b"],
+      "materials": ["stepped test strips", "timer digits", "enamel tray edges"],
+      "viewport": "A dark bench with one popup under the enlarger beam, and three variant test strips below it.",
+      "case": "Fuses cleanly for clarity: the station order is the real workflow and test strips are the variants. Marketers won't recognise themselves in a darkroom.",
+      "risk": "The dark amber room fights the brand colours and reads as a novelty.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-darkroom-safelight-bay-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/signals-instruments-darkroom-safelight-bay.webp"
+    },
+    {
+      "id": "challenger-feed",
+      "label": "One-Up Review Feed",
+      "verdict": "competitive",
+      "lineage": "Full-bleed vertical media feeds",
+      "thesis": "One popup owns the stage; snap to the next source; a right rail of actions (edit, QA, export).",
+      "palette": ["#0e0e10", "#ffffff", "#8a8a93"],
+      "materials": ["full-bleed stage", "glyph action rail", "low caption scrim"],
+      "viewport": "A popup filling the stage, the source and trigger as a low caption, and four glyph actions stacked on the right.",
+      "case": "Holds clarity for reviewing 30 popups one at a time; loses on editing density and on identifying with the team's desk work.",
+      "risk": "Editing copy inside a feed gets cramped; it feels like a phone app on a desktop task.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-vertical-video-feed-surface-hero.webp"
+    },
+    {
+      "id": "challenger-rain-garden",
+      "label": "Gravity Rain Garden",
+      "verdict": "declined",
+      "lineage": "Surreal gravity-field garden",
+      "thesis": "Cloud colour decides where each drop falls.",
+      "palette": ["#56615c", "#3b6fd8", "#d24b3e", "#111111"],
+      "materials": ["vector rain", "bent baselines"],
+      "viewport": "A garden where brands are clouds.",
+      "case": "Loses on both axes: whimsical physics hides a production task.",
+      "kept": "Colour as law: each colour means exactly one thing.",
+      "risk": "Unreadable for a build checklist.",
+      "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-gravity-rain-garden-hero.webp"
+    },
+    {
+      "id": "challenger-deep-dive",
+      "label": "Mesophotic Dive",
+      "verdict": "declined",
+      "lineage": "Technical dive profile",
+      "thesis": "Descend through stages on one depth axis.",
+      "palette": ["#0b1a2e", "#e8eef2", "#35d0d6"],
+      "materials": ["dive-computer digits", "marine snow"],
+      "viewport": "A vertical dive profile.",
+      "case": "Loses on both axes: no marketer identifies with a dive log.",
+      "kept": "One vertical axis ruling every line.",
+      "risk": "Dark and atmospheric where the task needs light and fast."
+    },
+    {
+      "id": "challenger-metro",
+      "label": "Metro Type Tiles",
+      "verdict": "declined",
+      "lineage": "Metro design language",
+      "thesis": "Giant cropped lowercase; tiles as the only doors.",
+      "palette": ["#000000", "#00aba9", "#ffffff"],
+      "materials": ["flat colour tiles", "cropped type"],
+      "viewport": "A panorama of brand tiles.",
+      "case": "Loses on both axes: colour tiles compete with the brand colours.",
+      "kept": "Chrome deleted: type and edges do the structuring.",
+      "risk": "Colour fields clash with four brand palettes."
+    },
+    {
+      "id": "challenger-cracktro",
+      "label": "Cracktro Queue",
+      "verdict": "declined",
+      "lineage": "Demoscene title screens",
+      "thesis": "Rank is depth over a black void.",
+      "palette": ["#000000", "#efe9d8", "#f0a020"],
+      "materials": ["bitmap type", "drifting dust"],
+      "viewport": "A queue of bitmap lines.",
+      "case": "Loses on both axes: it looks like a dev tool, which the team ruled out.",
+      "kept": "State is depth: selection lifts forward, the rest recedes.",
+      "risk": "Exactly the dev-tool feel the brief rules out."
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A clean SaaS template gallery: sidebar filters, a grid of popup thumbnails, and a detail drawer.",
+    "palette": ["#ffffff", "#f6f7f9", "#111827", "#6366f1"],
+    "materials": ["card grid", "filter chips", "slide-over drawer"],
+    "viewport": "Filter sidebar, a thumbnail grid of all popups, and clicking one opens an editor drawer.",
+    "risk": "Indistinguishable from any template marketplace by design."
+  },
+  "steer": true
+}
