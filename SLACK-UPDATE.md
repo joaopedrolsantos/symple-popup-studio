@@ -1,6 +1,6 @@
 # Popup Studio — Seed Supreme is done
 
-**Repo:** https://github.com/maisonarantos/symple-popup-studio
+**Repo:** https://github.com/joaopedrolsantos/symple-popup-studio
 Download it, double-click `templates/popup-studio.html`. No install, no build step, no login.
 
 ---
