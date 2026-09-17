@@ -610,3 +610,12 @@ at 620px, the panel's own retina size.
   system's own names - named cultivars where it names them, descriptive where it does not, so
   nothing is attributed to a strain on a guess.
 - **Packaging generic** swapped to the client's preferred render.
+
+### 17 Sep, USOA image library
+
+USOA's supplied photography is now in the studio, so the brand no longer starts empty: 19 images
+from `USOA Images/`, nine studio packshots first (THCA flower, gummies, bundles, accessories),
+then ten lifestyle shots. Embedded at JPEG q80 like the rest of the library, and already at the
+340x500 the panel previews, so the download the studio hands back is the file as supplied.
+Labels stay descriptive - what is in the shot, not a claim about the product - and each tile
+still names its source file, so an upload to Klaviyo is recognisable.

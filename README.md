@@ -45,7 +45,7 @@ Assets/                       copy spec, rules, fonts, partner logos, imagery, r
 | **Seed Supreme** | Done. Pure-black card with an orange bloom and paper grain, PP Agrandir Wide Black Italic headline, real partner lockups, 15-image library. |
 | **Homegrown** | Done. White 760px card, lime campaign-pill CTA. |
 | **ILGM** | Open. Still on the brief's tokens. **Blocked:** `ilgm.com` forces Chunk/Aleo and a lilac button onto every `.klaviyo-form` with `!important`, so an ILGM popup will not render as designed on the live site until that is settled. |
-| **USOA** | Open. Still on the brief's tokens. |
+| **USOA** | Open. Still on the brief's tokens. 19-image library loaded (9 product, 10 lifestyle). |
 
 ## Before anything ships
 
